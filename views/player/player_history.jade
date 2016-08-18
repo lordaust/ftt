@@ -1,0 +1,188 @@
+//
+   Created by alex on 07.08.2016.
+#history.player_history
+    .player_transfers#history_transfers
+    .panel.panel-default
+        .panel-heading Player transfers
+        .panel-body
+            table.table.table-hover.table-striped.table-condenced
+                thead
+                    tr
+                        th Season
+                        th Date
+                        th From club
+                        th To club
+                        th Transfer details
+                tbody
+                    tr
+                        td 5
+                        td 19.04.16
+                        td #[a(href='/players/9') Sporting ]
+                        td #[a(href='/players/#{player_club}') Brummington ]
+                        td Loan return
+                    tr
+                        td 4
+                        td 24.01.16
+                        td #[a(href='/players/#{player_club}') Brummington ]
+                        td #[a(href='/players/9') Sporting ]
+                        td Loan
+                    tr
+                        td 2
+                        td 19.02.15
+                        td #[a(href='/players/6') Brookline]
+                        td #[a(href='/players/#{player_club}') Brummington ]
+                        td Fee: 1.490.400
+                    tr
+                        td 1
+                        td 19.02.15
+                        td #[a(href='/players/7') Sillytown]
+                        td #[a(href='/players/6') Brookline]
+                        td Fee: 289.326
+                    tr
+                        td 1
+                        td 12.02.15
+                        td academy
+                        td #[a(href='/players/7') Sillytown ]
+                        td Promotion
+
+    .player_transfers#history_matches
+    .panel.panel-default
+        .panel-heading Player match history
+        .panel-body
+            table.table.table-hover.table-striped.table-condenced
+                thead
+                    tr
+                        th Season
+                        th Club
+                        th Matches
+                        th Goals
+                        th Assists
+                        th Cards
+                        th MoM
+                        th Avr
+                tbody
+                    tr
+                        td 5
+                        td #[a(href='/players/#{player_club}') Brummington]
+                        td 28
+                        td 11
+                        td 14
+                        td 2/0
+                        td 9
+                        td 8.24
+                    tr
+                        td 4
+                        td #[a(href='/players/9') Sporting]
+                        td 22
+                        td 14
+                        td 6
+                        td 0/0
+                        td 6
+                        td 7.94
+                    tr
+                        td 4
+                        td #[a(href='/players/#{player_club}') Brummington]
+                        td 2
+                        td 1
+                        td 0
+                        td 1/0
+                        td 1
+                        td 7.88
+                    tr
+                        td 3
+                        td #[a(href='/players/#{player_club}') Brummington]
+                        td 9
+                        td 4
+                        td 1
+                        td 0/0
+                        td 1
+                        td 7.19
+                    tr
+                        td 2
+                        td #[a(href='/players/#{player_club}') Brummington]
+                        td 12
+                        td 4
+                        td 1
+                        td 0/0
+                        td 1
+                        td 6.94
+                    tr
+                        td 2
+                        td #[a(href='/players/7') Brookline]
+                        td 7
+                        td 2
+                        td 2
+                        td 1/1
+                        td 1
+                        td 6.88
+                    tr
+                        td 1
+                        td #[a(href='/players/7') Brookline]
+                        td 14
+                        td 1
+                        td 4
+                        td 0/2
+                        td 0
+                        td 6.03
+                    tr
+                        td 1
+                        td #[a(href='/players/6') Sillytown]
+                        td 2
+                        td 0
+                        td 0
+                        td 0/0
+                        td 0
+                        td 4.87
+                    tr
+                        td
+                        td <strong>Total</strong>
+                        td 96
+                        td 37
+                        td 28
+                        td 4/3
+                        td 19
+                        td -
+    .player_transfers#history_awards
+    .panel.panel-default
+        .panel-heading Player awards
+        .panel-body
+            table.table.table-hover.table-striped.table-condenced
+                thead
+                    tr
+                        th Season
+                        th Award
+                        th Stat
+                tbody
+                    tr
+                        td 5
+                        td Most valuable player div 1:1
+                        td 25 points
+                    tr
+                        td 5
+                        td Player if the year div 1:1
+                        td 8.24 avr
+                    tr
+                        td 5
+                        td Most influencing player div 1:1
+                        td 9 mom
+                    tr
+                        td 5
+                        td Runner up goalscorer div 1:1
+                        td 11 goals / 2.545 avr / 220 min pr goal
+                    tr
+                        td 4
+                        td Top goalscorer div 2:2
+                        td 14 goals / 1.571 avr / 139 min pr goal
+                    tr
+                        td 4
+                        td International debut:
+                        td 25 mins, 12.07.15 for #[a(href='/players/7') England ]
+                    tr
+                        td 3
+                        td International debut u-21
+                        td 90 mins, 12.11.14 for #[a(href='/players/7') England u-21 ]
+                    tr
+                        td 2
+                        td Young player of the year div 2:4
+                        td 6.94 avr u21 players
+

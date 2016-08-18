@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  pre #{error.stack}
+
+  p You probably want to go here: a(href='/users') Users
+    p or here a(class='button', href='http://vg.no')
+    p a(href='hhtp://google.com')
+    p wth

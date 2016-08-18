@@ -1,0 +1,38 @@
+// Tab v2
+.tab-v2
+    ul.nav.nav-tabs
+        li.active
+            a(href='#home-1', data-toggle='tab') Details
+        li
+            a(href='#history-1', data-toggle='tab') History
+        li
+            a(href='#analysis-1', data-toggle='tab') Analysis
+        li
+            a(href='#performance-1', data-toggle='tab') Performance
+        li
+            a(href='#development-1', data-toggle='tab') Development
+
+    .tab-content
+        #home-1.tab-pane.fade.in.active
+            include ./player_details.jade
+        #history-1.tab-pane.fade.in
+            include ./player_history.jade
+        #analysis-1.tab-pane.fade.in
+            //        include /layer_analysis.jade : not yet done
+            h4 Heading Sample 3
+            p
+                img.pull-right.rgt-img-margin.img-width-200(alt='', src='assets/img/main/img21.jpg')
+                strong Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.
+                |  Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc.
+                strong Pellentesque fermentum
+                | , ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.
+        #performance-1.tab-pane.fade.in
+            include ./player_performance.jade
+        #development-1.tab-pane.fade.in
+            //        include ./player/layer_development.jade : not yet done
+            h4 Heading Sample 5
+            p
+                |  Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc.
+                strong Pellentesque fermentum
+                | , ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.
+// End Tab v2

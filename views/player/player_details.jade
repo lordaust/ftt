@@ -1,0 +1,264 @@
+//
+   Created by alex on 07.08.2016.
+
+#details.player_details
+    .panel.panel-default
+        .panel-body
+            .col-md-4
+                .funny-boxes.bg-color-white
+                    ul.list-unstyled.project-details
+                        li
+                            strong Age:
+                            | #{player_age}
+                        li
+                            strong Club:
+                            | Brummington (#{player_club})
+                        li
+                            strong Nationality:
+                            a(href='/club/international/121') English
+                        li
+                            strong National status:
+                            |  Member (4 caps)
+
+            .col-md-4
+                .funny-boxes.funny-boxes-left-green.bg-color-white
+                    ul.list-unstyled.project-details
+                        li
+                            strong Player ID:
+                            | 14521#{playerid}'
+                        li
+                            strong Value:
+                            | $2.105.206
+                        li
+                            strong Position:
+                            | Attacking midfielder (#{player_position})
+                        li
+                            strong Transfer status:
+                            a(href='./shortlisted/#{playerid}') On transferlist
+
+            .col-md-4
+                .funny-boxes.funny-boxes-left-green.bg-color-white
+                    ul.list-unstyled.project-details
+                        li
+                            strong Experience:
+                            | Established
+                        li
+                            strong Talent:
+                            | Raw
+                        li
+                            strong Potential:
+                            | Complete
+                        li
+                            strong Expectation:
+                            | First team member
+
+    .panel.panel-grey.margin-bottom-40
+      .panel-heading
+        h3.panel-title
+          i.fa.fa-th-list
+          |  Matches played
+      .panel-body
+        table.table.table-hover.table-condensed
+            thead
+                tr
+                    th Matchtype
+                    th Matches
+                    th Minutes
+                    th Goals
+                    th Assists
+                    th MoM
+                    th Cards
+                    th Avr
+                    th Details
+            tbody
+                tr
+                    td Friendly
+                    td 0/(0)
+                    td -
+                    td -
+                    td -
+                    td -
+                    td -
+                    td -
+                    td -
+                tr
+                    td League
+                    td 12/(1)
+                    td 1105
+                    td 6
+                    td 3
+                    td 4
+                    td 0/0
+                    td 7.29
+                    td
+                        a(href='#', onclick="toggle('player_match_stats');") less
+
+
+                tr#player_match_stats
+                    td
+                    td(colspan='8')
+                            i
+                            h5.strong Match contribution
+                            table.table-striped.table-condensed.table-bordered
+                                tr
+                                    th
+                                    th  #
+                                    th  Won
+                                    th
+
+                                    th
+                                    th  #
+                                    th  Won
+                                    th
+
+                                    th
+                                    th  #
+                                    th  Won
+                                    th
+
+                                    th
+                                    th  #
+                                    th  Won
+
+                                tr
+                                    td Shots saved
+                                    td 0
+                                    td 0%
+                                    td
+
+                                    td Duels
+                                    td 43
+                                    td 12%
+                                    td
+
+                                    td Long shots
+                                    td 67
+                                    td 58%
+                                    td
+
+                                    td Passes
+                                    td 138
+                                    td 47%
+
+
+                                tr
+                                    td Aerial saves
+                                    td 0
+                                    td 0%
+                                    td
+
+                                    td Tackles
+                                    td 38
+                                    td 57%
+                                    td
+
+                                    td Carried ball
+                                    td 112
+                                    td 78%
+                                    td
+
+                                    td Long shots
+                                    td 67
+                                    td 58%
+
+                                tr
+                                    td Reflex saves
+                                    td 0
+                                    td 0%
+                                    td
+
+                                    td Clearings
+                                    td 2
+                                    td 0%
+                                    td
+
+                                    td Shots
+                                    td 19
+                                    td 22%
+                                    td
+
+                                    td Blockings
+                                    td 5
+                                    td 58%
+
+
+                                tr
+                                    td Penalty saves
+                                    td 0
+                                    td 0%
+                                    td
+
+                                    td Aerial duels
+                                    td 13
+                                    td 33%
+                                    td
+
+                                    td Long passes
+                                    td 35
+                                    td 70%
+                                    td
+
+                                    td Free-kicks
+                                    td 12
+                                    td 30%
+
+                                tr
+                                    td Long shot saves
+                                    td 0
+                                    td 0%
+                                    td
+
+                                    td Headings
+                                    td 12
+                                    td 48%
+                                    td
+
+                                    td Penalties
+                                    td 2
+                                    td 100%
+                                    td
+
+                                    td Through balls
+                                    td 32
+                                    td 73%
+
+                tr
+                    td Cup
+                    td 2/(0)
+                    td 180
+                    td 0
+                    td 1
+                    td 0
+                    td 0/0
+                    td 6.47
+                    td
+                        a(href='./shortlisted/#{playerid}') more
+                tr
+                    td CNC
+                    td 0/(0)
+                    td -
+                    td -
+                    td -
+                    td -
+                    td -
+                    td -
+                    td -
+                tr
+                    td Nation
+                    td 1/(1)
+                    td 135
+                    td 1
+                    td 0
+                    td 1
+                    td 1/0
+                    td 7.86
+                    td
+                        a(href='./shortlisted/#{playerid}') more
+    .container
+            button.btn.btn-primary.rounded.btn-default.btn-lg(type='submit') Set training
+
+            button.btn.btn-primary.rounded.btn-default.btn-lg(type='submit') Change position
+
+            button.btn.btn-warning.rounded.btn-default.btn-lg(type='submit') Transfer player
+
+            button.btn.btn-danger.rounded.btn-default.btn-lg(type='submit') Retire player

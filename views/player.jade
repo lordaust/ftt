@@ -1,0 +1,88 @@
+//   Created by alex on 03.08.2016.
+extends layout
+
+block content
+    //Player detail body
+    .container.margin-top-20
+        .container-fluid
+            .col-md-6
+                .row
+                    .service-block-v3.service-block-u
+                        .row.margin-bottom-0
+                            .col-xs-6.service-in
+                                small Motivation
+                                h4.counter 78%
+                            .col-xs-6.text-right.service-in
+                                small Condition
+                                h4.counter 96 %
+                .row
+                    .funny-boxes.bg-color-white
+                        .row
+                            .col-md-4.funny-boxes-img
+                                img.img-responsive(src='/images/player2.png', alt='')
+
+                            .col-md-8
+                                h2
+                                    a(href='#') 10: #{player_firstname} #{player_surname} (#{player_age})
+                                ul.list-unstyled.funny-boxes-rating
+                                    li
+                                        i.fa.fa-star
+                                    li
+                                        i.fa.fa-star
+                                    li
+                                        i.fa.fa-star
+                                    li
+                                        i.fa.fa-star
+                                    li
+                                        i.fa.fa-star
+                                .h5 <strong>Value:</strong> $2.105.206
+                                p
+                                    | Stay with me. Forever. That's the whole point. Battle wounds are nothing new to me, preacher.
+                        .row
+                            .col-md-1
+                            .col-md-11
+                                .row
+                                    ul.list-inline.share-list
+                                        li
+                                            //comments
+                                            i.fa.fa-comments
+                                            a(href='#') 72 comments
+                                        li
+                                            //shortlisted
+                                            i.fa.fa-wpforms
+                                            a(href='#') 87 shortlists
+                                        li
+                                            //likes
+                                            i.fa.fa-thumbs-o-up
+                                            a(href='#') 72 likes
+                                        li
+                                            //bids
+                                            i.fa.fa-money
+                                            a(href='#') 3 bids
+
+
+            .col-md-6
+                .panel.panel-u
+                    .panel-heading
+                        h3.panel-title Player ratings
+                    .panel-body
+                        include ./player/player_skillbars.jade
+
+        .container-fluid
+
+        include ./player/player_sub_menu.jade
+
+
+
+
+
+
+
+
+
+//        include ./player/layer_skills.jade : for dev_puropses only
+
+
+
+
+

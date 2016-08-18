@@ -1,0 +1,339 @@
+doctype html
+html
+  <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+  <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+  head
+      title= title
+      meta(charset="utf-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+      link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+
+      <!-- Web Fonts -->
+      link(rel='shortcut' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin')
+
+      <!-- CSS Global Compulsory -->
+      link(rel='stylesheet', href='/stylesheets/style.css')
+
+      <!-- CSS Header and Footer -->
+      link(rel='stylesheet' href='/stylesheets/headers/header-default.css')
+      link(rel='stylesheet' href='/stylesheets/footers/footer-v1.css')
+
+      <!-- CSS Implementing Plugins -->
+      link(rel='stylesheet' href='/stylesheets/plugins/animate.css')
+      link(rel='stylesheet' href='/stylesheets/plugins/line-icons/line-icons.css')
+
+
+      <!-- CSS Theme -->
+      link(rel='stylesheet' href='/stylesheets/theme-colors/default.css')
+
+      <!-- CSS Customization -->
+      link(rel='stylesheet' href='/stylesheets/custom.css')
+
+
+      script(src='https://use.fontawesome.com/46883abbc0.js')
+
+      script(type='text/javascript' src='http://code.jquery.com/jquery-3.1.0.min.js')
+      script(type='text/javascript' src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+
+
+
+  body
+    .wrapper
+        .wrapper
+            // === Header ===
+            .header
+                .container
+                    // Logo
+                    a.logo(href='index.html')
+                        img(src='/images/logo-default.png', alt='Logo')
+                    // End Logo
+                    // Topbar
+                    .topbar
+                        ul.loginbar.pull-right
+                            li.hoverSelector
+                                i.fa.fa-globe
+                                a Languages
+                                ul.languages.hoverSelectorBlock
+                                    li.active
+                                        a(href='#')
+                                            | English
+                                            i.fa.fa-check
+                                    li
+                                        a(href='#') Spanish
+                                    li
+                                        a(href='#') German
+                            li.topbar-devider
+                            li
+                                a(href='#') Help
+                            li.topbar-devider
+                            li
+                                a(href='#') Login
+                    // End Topbar
+                    // Toggle get grouped for better mobile display
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+                        span.sr-only Toggle navigation
+                        span.fa.fa-bars
+                    // End Toggle
+                // /end container
+                // Collect the nav links, forms, and other content for toggling
+                .collapse.navbar-collapse.mega-menu.navbar-responsive-collapse
+                    .container
+                        ul.nav.navbar-nav
+                            // Home
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                                    | Home
+                                ul.dropdown-menu
+                                    li
+                                        a(href='/') Dashboard
+                                    li
+                                        a(href='#') Messages
+                            // End Home
+                            // Squad
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                                    | Squad
+                                ul.dropdown-menu
+                                    // About Pages
+                                    // Invoice Page
+                                    li
+                                        a(href='/players/8') First Team
+                                    // End Invoice Page
+                                    // Clients Page
+                                    li
+                                        a(href='#') Youth Academy
+                                    // End Clients Page
+                                    // Column Pages
+                                    li
+                                        a(href='#') Coaches
+                                    // End Column Pages
+                            // End Squad
+                            // Training
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                                    | Training
+                                ul.dropdown-menu
+                                    li
+                                        a(href='#') Schedule
+                                    li
+                                        a(href='#') Training history
+                            // End Training
+                            // Finances
+                            li.dropdown.active
+                                a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                                    | Finances
+                                ul.dropdown-menu
+                                    li.active
+                                        a(href='feature_gallery.html#footer-default') Gallery Examples
+                                    li
+                                        a(href='feature_animations.html') Animations on Scroll
+                            // End Finances
+                            // Matches
+                            li.dropdown.mega-menu-fullwidth
+                                a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                                    | Other
+                                ul.dropdown-menu
+                                    li
+                                        .mega-menu-content.disable-icons
+                                            .container
+                                                .row.equal-height
+                                                    .col-md-3.equal-height-in
+                                                        ul.list-unstyled.equal-height-list
+                                                            li
+                                                                h3 Typography & Components
+                                                            // Typography
+                                                            li
+                                                                a(href='shortcode_typo_general.html')
+                                                                    i.fa.fa-sort-alpha-asc
+                                                                    |  General Typography
+                                                            li
+                                                                a(href='shortcode_typo_headings.html')
+                                                                    i.fa.fa-magic
+                                                                    |  Headings Options
+                                                            li
+                                                                a(href='shortcode_typo_dividers.html')
+                                                                    i.fa.fa-ellipsis-h
+                                                                    |  Dividers
+                                                            li
+                                                                a(href='shortcode_typo_blockquote.html')
+                                                                    i.fa.fa-quote-left
+                                                                    |  Blockquote Blocks
+                                                            li
+                                                                a(href='shortcode_typo_boxshadows.html')
+                                                                    i.fa.fa-asterisk
+                                                                    |  Box Shadows
+                                                            li
+                                                                a(href='shortcode_typo_testimonials.html')
+                                                                    i.fa.fa-comments
+                                                                    |  Testimonials
+                                                            li
+                                                                a(href='shortcode_typo_tagline_boxes.html')
+                                                                    i.fa.fa-tasks
+                                                                    |  Tagline Boxes
+                                                            li
+                                                                a(href='shortcode_typo_grid.html')
+                                                                    i.fa.fa-align-justify
+                                                                    |  Grid Layouts
+                                                            // End Typography
+                                                            // Components
+                                                            li
+                                                                a(href='shortcode_compo_messages.html')
+                                                                    i.fa.fa-comment
+                                                                    |  Alerts & Messages
+                                                            li
+                                                                a(href='shortcode_compo_labels.html')
+                                                                    i.fa.fa-tags
+                                                                    |  Labels & Badges
+                                                            li
+                                                                a(href='shortcode_compo_media.html')
+                                                                    i.fa.fa-volume-down
+                                                                    |  Audio/Videos & Images
+                                                            li
+                                                                a(href='shortcode_compo_pagination.html')
+                                                                    i.fa.fa-arrows-h
+                                                                    |  Paginations
+                                                            // End Components
+                                                    .col-md-3.equal-height-in
+                                                        ul.list-unstyled.equal-height-list
+                                                            li
+                                                                h3 Buttons & Icons
+                                                            // Buttons
+                                                            li
+                                                                a(href='shortcode_btn_general.html')
+                                                                    i.fa.fa-flask
+                                                                    |  General Buttons
+                                                            li
+                                                                a(href='shortcode_btn_brands.html')
+                                                                    i.fa.fa-html5
+                                                                    |  Brand & Social Buttons
+                                                            li
+                                                                a(href='shortcode_btn_effects.html')
+                                                                    i.fa.fa-bolt
+                                                                    |  Loading & Hover Effects
+                                                            // End Buttons
+                                                            // Icons
+                                                            li
+                                                                a(href='shortcode_icon_general.html')
+                                                                    i.fa.fa-chevron-circle-right
+                                                                    |  General Icons
+                                                            li
+                                                                a(href='shortcode_icon_fa.html')
+                                                                    i.fa.fa-chevron-circle-right
+                                                                    |  Font Awesome Icons
+                                                            li
+                                                                a(href='shortcode_icon_line.html')
+                                                                    i.fa.fa-chevron-circle-right
+                                                                    |  Line Icons
+                                                            li
+                                                                a(href='shortcode_icon_line_christmas.html')
+                                                                    i.fa.fa-chevron-circle-right
+                                                                    |  Line Icons Pro
+                                                            li
+                                                                a(href='shortcode_icon_glyph.html')
+                                                                    i.fa.fa-chevron-circle-right
+                                                                    |  Glyphicons Icons (Bootstrap)
+                                                            // End Icons
+                                                    .col-md-3.equal-height-in
+                                                        ul.list-unstyled.equal-height-list
+                                                            li
+                                                                h3 Common elements
+                                                            // Common Elements
+                                                            li
+                                                                a(href='shortcode_thumbnails.html')
+                                                                    i.fa.fa-image
+                                                                    |  Thumbnails
+                                                            li
+                                                                a(href='shortcode_accordion_and_tabs.html')
+                                                                    i.fa.fa-list-ol
+                                                                    |  Accordion & Tabs
+                                                            li
+                                                                a(href='shortcode_timeline1.html')
+                                                                    i.fa.fa-dot-circle-o
+                                                                    |  Timeline Option 1
+                                                            li
+                                                                a(href='shortcode_timeline2.html')
+                                                                    i.fa.fa-dot-circle-o
+                                                                    |  Timeline Option 2
+                                                            li
+                                                                a(href='shortcode_table_general.html')
+                                                                    i.fa.fa-table
+                                                                    |  Tables
+                                                            li
+                                                                a(href='shortcode_compo_progress_bars.html')
+                                                                    i.fa.fa-align-left
+                                                                    |  Progress Bars
+                                                            li
+                                                                a(href='shortcode_compo_panels.html')
+                                                                    i.fa.fa-columns
+                                                                    |  Panels
+                                                            li
+                                                                a(href='shortcode_carousels.html')
+                                                                    i.fa.fa-sliders
+                                                                    |  Carousel Examples
+                                                            li
+                                                                a(href='shortcode_maps_google.html')
+                                                                    i.fa.fa-map-marker
+                                                                    |  Google Maps
+                                                            li
+                                                                a(href='shortcode_maps_vector.html')
+                                                                    i.fa.fa-align-center
+                                                                    |  Vector Maps
+                                                            // End Common Elements
+                                                    .col-md-3.equal-height-in
+                                                        ul.list-unstyled.equal-height-list
+                                                            li
+                                                                h3 Forms & Infographics
+                                                            // Forms
+                                                            li
+                                                                a(href='shortcode_form_general.html')
+                                                                    i.fa.fa-bars
+                                                                    |  Common Bootstrap Forms
+                                                            li
+                                                                a(href='shortcode_form_general1.html')
+                                                                    i.fa.fa-bars
+                                                                    |  General Unify Forms
+                                                            li
+                                                                a(href='shortcode_form_advanced.html')
+                                                                    i.fa.fa-bars
+                                                                    |  Advanced Forms
+                                                            li
+                                                                a(href='shortcode_form_layouts.html')
+                                                                    i.fa.fa-bars
+                                                                    |  Form Layouts
+                                                            li
+                                                                a(href='shortcode_form_layouts_advanced.html')
+                                                                    i.fa.fa-bars
+                                                                    |  Advanced Layout Forms
+                                                            li
+                                                                a(href='shortcode_form_states.html')
+                                                                    i.fa.fa-bars
+                                                                    |  Form States
+                                                            li
+                                                                a(href='shortcode_form_sliders.html')
+                                                                    i.fa.fa-bars
+                                                                    |  Form Sliders
+                                                            li
+                                                                a(href='shortcode_form_modals.html')
+                                                                    i.fa.fa-bars
+                                                                    |  Modals
+                                                            // End Forms
+                                                            // Infographics
+                                                            li
+                                                                a(href='shortcode_compo_charts.html')
+                                                                    i.fa.fa-pie-chart
+                                                                    |  Charts & Countdowns
+                                                            // End Infographics
+                            // End Matches
+                            // Search Block
+                            li
+                                i.search.fa.fa-search.search-btn
+                                .search-open
+                                    .input-group.animated.fadeInDown
+                                        input.form-control(type='text', placeholder='Search')
+                                        span.input-group-btn
+                                            button.btn-u(type='button') Go
+                            // End Search Block
+                    // /end container
+                // /navbar-collapse
+            // === End Header ===
+block content
